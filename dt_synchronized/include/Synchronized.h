@@ -21,7 +21,7 @@ class Synchronized {
     Locked(T &t, std::mutex &m) : t_(t), m_(m) { m_.lock(); }
 
     Locked(const Locked&) = delete;
-    Locked(Locked&&) = default;
+    Locked(Locked&&) = delete;
 
     Locked& operator=(const Locked&) = delete;
     Locked& operator=(Locked&&) = delete;
@@ -32,6 +32,7 @@ class Synchronized {
   };
 
  public:
+  // Rely on RVO for now by removing copy and move operators.
   Locked operator->() { return Locked(t_, m_); }
 
   void locked(std::function<void(T&)> f) { m_.lock(); f(t_); m_.unlock(); }
