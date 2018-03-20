@@ -49,4 +49,6 @@ If you don't have a development environment available right now you can play wit
 Conclusions
 -----------
 
-_Here goes the feedback after the first workshop._
+- Good for value objects.
+- For pointers it is redundant information as a _nullptr_ indicates an unset value.
+- The C++17 standard defines _nullopt_ or _{}_ to initialize an unset _optional_.
