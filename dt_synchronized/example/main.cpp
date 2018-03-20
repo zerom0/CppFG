@@ -41,9 +41,5 @@ int main() {
   a.join();
   b.join();
 
-  // BUG: state->a() and state->b() cannot appear in the same expression as both will pull the lock and
-  //      therefore deadlock :-(
-  state.locked([](State& locked_state) {
-      cout << "a = " << locked_state.a() << " and b = " << locked_state.b();
-  });
+  cout << "a = " << state->a() << " and b = " << state->b();
 }

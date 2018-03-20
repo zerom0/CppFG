@@ -12,13 +12,13 @@
 template<typename T>
 class Synchronized {
   T t_;
-  std::mutex m_;
+  std::recursive_mutex m_;
 
   class Locked {
     T &t_;
-    std::mutex& m_;
+    std::recursive_mutex& m_;
    public:
-    Locked(T &t, std::mutex &m) : t_(t), m_(m) { m_.lock(); }
+    Locked(T &t, std::recursive_mutex &m) : t_(t), m_(m) { m_.lock(); }
 
     Locked(const Locked&) = delete;
     Locked(Locked&&) = delete;
