@@ -1,9 +1,10 @@
 Focus group C++
 ===============
 
-This repository includes examples and training material for the C++ focus group meetings. Conference videos worth watching and any further information that is helpful getting most out of the C++ programming language.
+This repository includes examples and training material for the C++ focus group meetings.
+Conference videos worth watching and any further information that is helpful in getting most out of the C++ programming language.
 
-Suggestions for new training/discussion toppics can be added as bugs to GitHub.
+Suggestions for new training/discussion topics can be added as bugs to GitHub.
 
 Trainings
 ---------
