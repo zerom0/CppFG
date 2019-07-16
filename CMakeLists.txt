@@ -3,3 +3,4 @@ project(CppFG)
 
 add_subdirectory(dt_optional)
 add_subdirectory(dt_synchronized)
+add_subdirectory(std_chrono)

@@ -10,10 +10,11 @@ Trainings
 ---------
 1. [Datatype optional<>](dt_optional/README.md)2017-03-20
 1. [Datatype synchronized<>](dt_synchronized/README.md) 2017-03-20
-1. CMake done right (2h) - next session
+1. [std::chrono](std_chrono/README.md) - next session
 
 Backlog
 -------
+1. CMake done right (2h)
 1. C++17 overview (2h)
 1. Parallel and concurrent programming (4h)
 1. Functional programming (4h)
